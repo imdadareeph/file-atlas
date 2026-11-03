@@ -15,7 +15,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/imdadareeph/file-atlas)](https://github.com/imdadareeph/file-atlas/commits/main)
 [![Brand](https://img.shields.io/badge/%40agenticcodingnewsletters-e2a76f.svg)](#license)
 
-<img src="docs/screenshot.png" alt="FileAtlas mapping a sample workspace: a rotating 3D cloud of file dots with the detail panel open" width="900" />
+<img src="docs/file-atlas-main.png" alt="FileAtlas mapping 867 files: a rotating 3D cloud of file dots linked by folder, with the detail panel open" width="900" />
 
 </div>
 
