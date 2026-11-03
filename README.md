@@ -1,8 +1,25 @@
+<div align="center">
+
 # FileAtlas
 
-**See a whole folder at once.** FileAtlas turns any folder on your machine into a rotating 3D constellation: every file is a glowing dot, colored by the folder it lives in and linked to its siblings, parents and peer folders.
+**See a whole folder at once. Your files as a rotating 3D constellation, linked by folder.**
 
-> React · Tailwind CSS v4 · three.js · a tiny zero-dependency Node server
+[![Quick start](https://img.shields.io/badge/quick%20start-.%2Frun.sh-e2a76f?style=for-the-badge)](#quick-start)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](src/App.jsx)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38bdf8?logo=tailwindcss&logoColor=white)](src/index.css)
+[![three.js](https://img.shields.io/badge/three.js-WebGL-222?logo=threedotjs&logoColor=white)](src/lib/atlas.js)
+[![Node](https://img.shields.io/badge/server-zero%20dependencies-brightgreen?logo=nodedotjs&logoColor=white)](server.js)
+[![Local first](https://img.shields.io/badge/data-stays%20on%20your%20machine-8ea9c1.svg)](#privacy-and-security)
+[![Last commit](https://img.shields.io/github/last-commit/imdadareeph/file-atlas)](https://github.com/imdadareeph/file-atlas/commits/main)
+[![Brand](https://img.shields.io/badge/%40agenticcodingnewsletters-e2a76f.svg)](#license)
+
+<img src="docs/screenshot.png" alt="FileAtlas mapping a sample workspace: a rotating 3D cloud of file dots with the detail panel open" width="900" />
+
+</div>
+
+---
 
 ## Why
 
