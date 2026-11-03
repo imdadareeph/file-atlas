@@ -88,7 +88,7 @@ export default function App() {
         onHover={(i, x, y) => setHover({ i, x, y })} onSelect={setSelected} />
       <div className={fade}><Header ref={search} onSearch={find} onFolders={() => setModal(true)} />
         <Hero model={model} roots={data.roots.filter((r) => r.ok)} onExplore={() => atlas.current.dive()} onFolders={() => setModal(true)} />
-        <Summary model={model} maxFiles={cfg.maxFiles} truncated={data.truncated} />
+        <Summary model={model} maxFiles={cfg.maxFiles} truncated={data.truncated} faded={selected >= 0} />
         <footer className="absolute inset-x-8 bottom-[11px] z-4 hidden justify-between font-mono text-[7px] text-[#424c5e] md:flex"><span>FileAtlas · {settings.paths.length + picked.length} folder{settings.paths.length + picked.length === 1 ? '' : 's'} · depth {settings.depth}</span><span>Every dot is a file.</span></footer>
       </div>
       <div className={fade}><BottomLeft model={model} atlasRef={atlas} /></div>

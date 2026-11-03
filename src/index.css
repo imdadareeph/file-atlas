@@ -19,3 +19,9 @@ input[type="range"] { accent-color: #7766ff; }
 @keyframes rise { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: none; } }
 .rise > * { animation: rise .65s cubic-bezier(.2,.8,.2,1) both; }
 .rise > *:nth-child(2) { animation-delay: .07s } .rise > *:nth-child(3) { animation-delay: .14s } .rise > *:nth-child(4) { animation-delay: .21s } .rise > *:nth-child(5) { animation-delay: .28s }
+
+/* short viewports (e.g. 1280x720): keep the hero and bottom-left panels from colliding */
+@media (max-height: 820px) {
+  .atlas-hero-p { display: none; }
+  .atlas-bl:has(details[open]) .atlas-legend { display: none; }
+}

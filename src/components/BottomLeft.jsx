@@ -14,7 +14,7 @@ function Legend({ model }) {
   const rows = tab === 'folders' ? model.groups.map((g) => [g.color, g.label, g.count]) : model.types.map((t) => [TYPE_COLOR[t.label], t.label, t.count])
   const tabCls = (k) => `font-mono text-[8px] tracking-[2px] ${tab === k ? 'text-white' : 'text-[#66738a]'}`
   return (
-    <div className="rounded-[11px] border border-line bg-glass px-[17px] py-[15px] backdrop-blur-xl">
+    <div className="atlas-legend rounded-[11px] border border-line bg-glass px-[17px] py-[15px] backdrop-blur-xl">
       <div className="mb-[11px] flex justify-between">
         <div className="flex gap-3"><button className={tabCls('folders')} onClick={() => setTab('folders')}>TOP FOLDERS</button><button className={tabCls('types')} onClick={() => setTab('types')}>FILE TYPES</button></div>
         {rows.length > 8 && <button onClick={() => setAll(!all)} className="font-mono text-[8px] text-[#7885ff]">{all ? 'SHOW LESS ←' : 'VIEW ALL →'}</button>}
@@ -67,7 +67,7 @@ function Rotation({ atlasRef }) {
 
 export default function BottomLeft({ model, atlasRef }) {
   return (
-    <div className="absolute bottom-[50px] left-8 z-4 hidden w-[375px] flex-col gap-2.5 transition-opacity duration-400 md:flex">
+    <div className="atlas-bl absolute bottom-[50px] left-8 z-4 hidden w-[375px] flex-col gap-2.5 transition-opacity duration-400 md:flex">
       <Legend model={model} /><Rotation atlasRef={atlasRef} />
     </div>
   )
